@@ -1,21 +1,7 @@
-
-
-
-
-
-
-
-
-
-
-
-
 #include "libft.h"
-
 int	number_size(long n, int signo)
 {
 	int	size;
-
 	size = 1;
 	while (n / 10)
 	{
@@ -26,14 +12,12 @@ int	number_size(long n, int signo)
 		return (size + 1);
 	return (size);
 }
-
 char	*ft_itoa(int n)
 {
 	char	*s;
 	long	m;
 	int		signo;
 	int		size;
-
 	m = (long)n;
 	if (n < 0)
 		signo = -1;

@@ -1,22 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
 #include "libft.h"
-
 static int	number_of_words(char const *s, char c)
 {
 	int	current_pos;
 	int	nwords;
-
 	current_pos = 0;
 	nwords = 0;
 	while (s[current_pos] != '\0')
@@ -30,17 +16,14 @@ static int	number_of_words(char const *s, char c)
 	}
 	return (nwords);
 }
-
 static int	word_len(char const *s, char c, int current_pos)
 {
 	int	final_pos;
-
 	final_pos = current_pos;
 	while (s[final_pos] != '\0' && s[final_pos] != c)
 		final_pos++;
 	return (final_pos - current_pos);
 }
-
 static char	**free_split(char **s, int current_pos)
 {
 	while (current_pos >= 0)
@@ -51,13 +34,11 @@ static char	**free_split(char **s, int current_pos)
 	free(s);
 	return (NULL);
 }
-
 char	**ft_split(char const *s, char c)
 {
 	char	**split;
 	size_t	current_pos;
 	int		n;
-
 	if (!s)
 		return (NULL);
 	split = (char **)malloc(sizeof(char *) * (number_of_words(s, c) + 1));

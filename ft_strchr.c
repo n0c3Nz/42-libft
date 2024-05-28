@@ -1,22 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
 #include "libft.h"
-
 char	*ft_strchr(const char *s, int c)
 {
 	unsigned char	l;
 	size_t			i;
-
 	l = (unsigned char)c;
 	i = 0;
 	while (s[i] != '\0')

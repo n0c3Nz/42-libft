@@ -1,23 +1,9 @@
-
-
-
-
-
-
-
-
-
-
-
-
 #include "libft.h"
-
 int	ft_atoi(const char *str)
 {
 	unsigned int	num;
 	int				i;
 	int				signo;
-
 	signo = 1;
 	i = 0;
 	num = 0;

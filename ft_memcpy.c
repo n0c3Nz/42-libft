@@ -1,22 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
 #include "libft.h"
-
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char	*dst_aux;
 	char	*src_aux;
-
 	if (!dst && !src)
 		return (NULL);
 	dst_aux = (char *)dst;

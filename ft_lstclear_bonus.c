@@ -1,21 +1,7 @@
-
-
-
-
-
-
-
-
-
-
-
-
 #include "libft.h"
-
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*aux;
-
 	if (lst && del)
 	{
 		aux = *lst;
